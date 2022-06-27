@@ -11,4 +11,4 @@ class Article(models.Model):
     image = models.ImageField(upload_to='article/', null=True)
     content = models.TextField(null=True)
 
-    created_at = models.DateField(auto_now_add=True, null=True)
+    created_at = models.DateField(auto_now_add=True, null=True)     #데이터베이스에서 auto_now_add를 해야 작성한 날짜가 기록됨.
