@@ -4,6 +4,11 @@ env = environ.Env(
     DEBUG=(bool, False)
 )
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> origin/main
 #reading. env file
 environ.Env.read_env(
     env_file=os.path.join(BASE_DIR, '.env')
