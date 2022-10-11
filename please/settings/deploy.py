@@ -29,6 +29,18 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 CSRF_TRUSTED_ORIGINS = ['https://happyplease.shop']     #forbidden 오류csrf...
+CORS_ALLOW_CREDENTIALS = True
+
+CORS_ORIGIN_ALLOW_ALL = True
+
+CORS_REPLACE_HTTPS_REFERER = True
+
+CSRF_COOKIE_DOMAIN = 'happyplease.shop'
+
+CORS_ORIGIN_WHITELIST = (
+    'https://happyplease.shop/',
+    'happyplease.shop',
+)
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
