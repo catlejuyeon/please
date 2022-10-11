@@ -28,7 +28,7 @@ SECRET_KEY = read_secret('DJANGO_SECRET_KEY')
 DEBUG = False
 
 ALLOWED_HOSTS = ['*']
-
+CSRF_TRUSTED_ORIGINS = ['https://happyplease.shop']     #forbidden 오류csrf...
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
